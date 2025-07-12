@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Clinical Support System – Polypharmacy ADE Prevention</title>
+  <style>
+    :root {
+      --primary: #0f766e; /* teal */
+      --secondary: #1e293b; /* dark gray-blue */
+      --light: #f8fafc;
+      --accent: #f59e0b; /* amber */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--secondary);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: #ffffff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 1.25rem;
+      font-weight: 600;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(15, 118, 110, 0.6), rgba(15, 118, 110, 0.6)), url('https://images.unsplash.com/photo-1503437313881-503a91226423?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;
+      color: #ffffff;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+      text-align: center;
+    }
+
+    .objectives li {
+      margin-bottom: 1rem;
+      padding-left: 0.5rem;
+      border-left: 4px solid var(--accent);
+    }
+
+    footer {
+      background: var(--secondary);
+      color: #ffffff;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+      nav a {
+        margin-left: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h3>Polypharm ADE Support Project</h3>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#objectives">Objectives</a>
+        <a href="#method">Method</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Smart Clinical Support System</h1>
+    <p>Preventing Adverse Drug Events Among Elderly Patients on Polypharmacy in Nairobi County</p>
+  </section>
+
+  <section id="about">
+    <h2>About the Study</h2>
+    <p>The purpose of this study is to design and evaluate a smart clinical support system that detects and flags potentially harmful drug combinations in real time, thereby preventing adverse drug events (ADEs) among elderly patients (aged 60+) on polypharmacy within Nairobi County hospitals.</p>
+  </section>
+
+  <section id="objectives">
+    <h2>Objectives</h2>
+    <ol class="objectives">
+      <li>Assess the current prevalence of polypharmacy and ADEs among elderly patients in participating hospitals.</li>
+      <li>Identify the most common drug–drug interactions and inappropriate medications using Beers Criteria, STOPP/START guidelines, and pharmacy records.</li>
+      <li>Design a smart support system (AI or rule-based) that flags harmful drug combinations in real time.</li>
+      <li>Pilot the system with real patient prescription data to evaluate accuracy in predicting high-risk medication profiles.</li>
+      <li>Compare system performance with manual pharmacist assessments to determine sensitivity, specificity, and error reduction.</li>
+      <li>Evaluate healthcare professionals' attitudes, perceptions, and ease of use through structured interviews and questionnaires.</li>
+      <li>Develop practical recommendations to implement and scale the system across Nairobi County health facilities.</li>
+    </ol>
+  </section>
+
+  <section id="method">
+    <h2>Methodology Overview</h2>
+    <p>This study will employ a mixed-methods approach combining retrospective prescription data analysis, AI model development, pilot testing, and qualitative user feedback to refine the support system.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Team</h2>
+    <p>Email: <a href="mailto:info@polypharmadeproject.org">info@polypharmadeproject.org</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Polypharm ADE Support Project. All rights reserved.
+  </footer>
+
+  <script>
+    // Smooth scroll for navigation
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
